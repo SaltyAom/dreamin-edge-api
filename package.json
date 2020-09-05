@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
+		"build": "tsc && node",
 		"vercel-build": "tsc && node build.js"
 	},
 	"dependencies": {

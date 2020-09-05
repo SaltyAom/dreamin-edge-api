@@ -16,6 +16,6 @@ paths("dist", (err, { files }) => {
 	files.forEach(async (file) => {
 		if (!file.endsWith(".js")) return
 
-        await execute(`npx terser ${file} -o ${file} --ecma 2018 --mangle`)
+		await execute(`npx terser ${file} -o ${file} --ecma 2018 --mangle`)
 	})
 })
