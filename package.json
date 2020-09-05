@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"scripts": {
 		"dev": "concurrently \"tsc --watch\" \"nodemon dist/index.js\"",
-		"build": "tsc && node",
+		"build": "tsc && node build.js",
 		"vercel-build": "tsc && node build.js"
 	},
 	"dependencies": {
@@ -13,6 +13,7 @@
 		"@types/node-fetch": "^2.5.7",
 		"fastify": "^3.3.0",
 		"fastify-compress": "^3.3.0",
+		"fastify-cors": "^4.1.0",
 		"fastify-helmet": "^5.0.1",
 		"node-fetch": "^2.6.0"
 	},
