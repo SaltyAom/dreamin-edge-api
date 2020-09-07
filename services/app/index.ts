@@ -22,8 +22,8 @@ app.register(require("fastify-compress"))
 	.register(require("fastify-helmet"))
 	.register(require("fastify-cors"), {
 		origin: [
-			"https://dreamin-edge.now.sh"
-			/* "http://localhost:8080" */
+			"https://dreamin-edge.now.sh",
+			"http://localhost:8080"
 		]
 	})
 

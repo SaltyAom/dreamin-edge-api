@@ -46,7 +46,7 @@ class MaidreaminAPI {
 					"en": "${menu.name.en}",
 					"jp": "${menu.name.jp}"
 				},
-				"price": "${menu.price}"
+				"price": ${menu.price}
 			}`)
 
 		return JSON.parse(`{
